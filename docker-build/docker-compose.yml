@@ -55,7 +55,7 @@ services:
     networks:
       fedvision-network:
         ipv4_address: 192.167.0.113
-    command: ["/bin/bash", "-c", "source venv/bin/activate && python -m fedvision.framework.cli.cluster_worker --name worker1-0 --worker-ip '192.167.0.113' --port-start 12000 --port-end 12029 --max-tasks 10 --manager-address '192.167.0.111:10001' --data-base-dir /data/projects/fedvision/FedVision/dataset "]
+    command: ["/bin/bash", "-c", "source venv/bin/activate && python -m fedvision.framework.cli.cluster_worker --name worker1-0 --worker-ip '192.167.0.113' --port-start 12000 --port-end 12029 --max-tasks 10 --manager-address '192.167.0.111:10001' --data-base-dir /data/projects/fedvision/FedVision/ "]
     depends_on:
       - cluster1
     volumes:
@@ -70,7 +70,7 @@ services:
     networks:
       fedvision-network:
         ipv4_address: 192.167.0.114
-    command: ["/bin/bash", "-c", "source venv/bin/activate && python -m fedvision.framework.cli.cluster_worker --name worker1-1 --worker-ip '192.167.0.114' --port-start 12000 --port-end 12029 --max-tasks 10 --manager-address '192.167.0.111:10001' --data-base-dir /data/projects/fedvision/FedVision/dataset "]
+    command: ["/bin/bash", "-c", "source venv/bin/activate && python -m fedvision.framework.cli.cluster_worker --name worker1-1 --worker-ip '192.167.0.114' --port-start 12000 --port-end 12029 --max-tasks 10 --manager-address '192.167.0.111:10001' --data-base-dir /data/projects/fedvision/FedVision/ "]
     depends_on:
       - cluster1
     volumes:
@@ -115,7 +115,7 @@ services:
     networks:
       fedvision-network:
         ipv4_address: 192.167.0.123
-    command: ["/bin/bash", "-c", "source venv/bin/activate && python -m fedvision.framework.cli.cluster_worker --name worker2-0 --worker-ip '192.167.0.123' --port-start 12000 --port-end 12029 --max-tasks 10 --manager-address '192.167.0.121:10001' --data-base-dir /data/projects/fedvision/FedVision/dataset "]
+    command: ["/bin/bash", "-c", "source venv/bin/activate && python -m fedvision.framework.cli.cluster_worker --name worker2-0 --worker-ip '192.167.0.123' --port-start 12000 --port-end 12029 --max-tasks 10 --manager-address '192.167.0.121:10001' --data-base-dir /data/projects/fedvision/FedVision/ "]
     depends_on:
       - cluster2
     volumes:
@@ -130,7 +130,7 @@ services:
     networks:
       fedvision-network:
         ipv4_address: 192.167.0.124
-    command: ["/bin/bash", "-c", "source venv/bin/activate && python -m fedvision.framework.cli.cluster_worker --name worker2-1 --worker-ip '192.167.0.124' --port-start 12000 --port-end 12029 --max-tasks 10 --manager-address '192.167.0.121:10001' --data-base-dir /data/projects/fedvision/FedVision/dataset "]
+    command: ["/bin/bash", "-c", "source venv/bin/activate && python -m fedvision.framework.cli.cluster_worker --name worker2-1 --worker-ip '192.167.0.124' --port-start 12000 --port-end 12029 --max-tasks 10 --manager-address '192.167.0.121:10001' --data-base-dir /data/projects/fedvision/FedVision/ "]
     depends_on:
       - cluster2
     volumes:
