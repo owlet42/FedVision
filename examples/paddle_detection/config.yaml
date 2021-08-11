@@ -7,4 +7,4 @@ job_config:
   inner_step: 1
   device: cpu
   use_vdl: true
-algorithm_config: ./yolov3_mobilenet_v1_fruit.yml
+algorithm_config: ./yolov3_mobilenet_v1_roadsign.yml
