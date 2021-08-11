@@ -52,6 +52,7 @@ services:
     image: "federatedai/fedvision:latest"
     ports:
       - "12000-12029"
+      - "8040"
     networks:
       fedvision-network:
         ipv4_address: 192.167.0.113
@@ -67,6 +68,7 @@ services:
     image: "federatedai/fedvision:latest"
     ports:
       - "12000-12029"
+      - "8040"
     networks:
       fedvision-network:
         ipv4_address: 192.167.0.114
@@ -112,6 +114,7 @@ services:
     image: "federatedai/fedvision:latest"
     ports:
       - "12000-12029"
+      - "8040"
     networks:
       fedvision-network:
         ipv4_address: 192.167.0.123
@@ -127,6 +130,7 @@ services:
     image: "federatedai/fedvision:latest"
     ports:
       - "12000-12029"
+      - "8040"
     networks:
       fedvision-network:
         ipv4_address: 192.167.0.124
